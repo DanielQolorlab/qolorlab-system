@@ -1,0 +1,87 @@
+# ─────────────────────────────────────────────────────────────────
+# Basin Navigation System — Session File
+# ─────────────────────────────────────────────────────────────────
+# Filename: [YYYY-MM-DD]-[nn].yaml
+# One file per session. Session header at the top.
+# Append iteration entries below the divider.
+# Reference: skills/midjourney/docs/ITERATION_AND_LOGGING.md
+# ─────────────────────────────────────────────────────────────────
+
+session:
+  id: "2026-03-18-01"
+  date: "2026-03-18"
+  project: "mj-basin-test-01"
+  goal: "Consistent portrait series of a fantasy warrior in painterly style"              # one sentence — what specific output is the target of this session
+
+  # Must match project.yaml system_lock. Note intentional overrides explicitly.
+  system_lock:
+    model_version: "v6.1"
+    stylize: 250
+    aspect_ratio: "3_4"
+    seed: ""            # integer or "unlocked"
+    sref: ""            # url or "null: building"
+    cref: ""            # url or "null: [reason]"
+
+# ─────────────────────────────────────────────────────────────────
+# Iteration entries — append one block per generation below.
+# Copy from: skills/midjourney/templates/iteration.yaml
+# ─────────────────────────────────────────────────────────────────
+
+iterations:
+
+  - iteration:
+      id: "2026-01-01-01-01"
+      model_version: "v6.1"
+      seed: 0
+      variable_changed: "none"    # "none" for the first iteration in a session
+      change_description: "Initial prompt. Establishing basin."
+
+      prompt: |
+        oil painting of a fantasy warrior, portrait, three-quarter view, chiaroscuro lighting, dark background
+
+        # Layer 1 — Basin Anchors
+        subject_anchor: ""
+        medium_anchor: ""
+        sref: ""
+        cref: ""
+
+        # Layer 2 — Subject Specification
+        subject_detail: ""
+        action_or_state: ""
+
+        # Layer 3 — Environment
+        environment: ""
+        time_of_day: ""
+        weather_or_atmosphere: ""
+
+        # Layer 4 — Style Dimensions
+        lighting_quality: ""
+        lighting_direction: ""
+        colour_palette: ""
+        colour_temperature: ""
+        era: ""
+        mood_register: ""
+
+        # Layer 5 — Camera and Composition
+        focal_length: ""
+        depth_of_field: ""
+        framing: ""
+        composition_type: ""
+
+        # Layer 6 — Model Delegation
+        delegated_dimensions: []
+
+        # Layer 7 — Exclusions
+        no_tokens: []
+
+      full_prompt_string: ""      # exact string submitted to MJ — verbatim
+
+      result:
+        output_url: ""
+        selected_variant: ""      # A / B / C / D / none
+        upscaled: false
+        verdict: ""               # keep / discard / iterate
+        basin_assessment: ""      # correct / drifted / wrong
+        dimension_failures: []
+        next_variable: ""         # required if verdict is "iterate"
+        notes: ""

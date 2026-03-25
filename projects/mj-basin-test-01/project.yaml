@@ -1,0 +1,38 @@
+# ─────────────────────────────────────────────────────────────────
+# Basin Navigation System — Project Config
+# ─────────────────────────────────────────────────────────────────
+# Fill in once when starting the project.
+# This file is the stable identity of the project's visual system.
+# Do not change between sessions unless a Layer 0 parameter test is underway.
+# Reference: skills/midjourney/docs/DECISION_LAYERS.md
+# ─────────────────────────────────────────────────────────────────
+
+project:
+  name: "name: mj-basin-test-01"
+  goal: "goal: Consistent portrait series of a fantasy warrior in painterly style"          # one sentence — what visual output does this project produce
+
+# ── Layer 0: System Lock ──────────────────────────────────────────
+# Held constant across all sessions.
+# A change to any of these resets the iteration sequence.
+system_lock:
+  model_version: "v6.1"
+  aspect_ratio: "3:4"          # e.g. 16:9 / 1:1 / 2:3 / 3:4
+  stylize: 250                # 0–1000. Set intentionally. Do not leave at 0 without a reason.
+  seed: ""                  # integer. Use "unlocked" until a composition is found, then lock it.
+
+# ── Layer 1A: Content Basin ───────────────────────────────────────
+# Subject and medium jointly define the basin.
+# Written as a combined phrase: "[subject] [medium]"
+content_basin:
+  subject_anchor: "fantasy warrior"        # e.g. "portrait of a woman"
+  medium_anchor: "oil painting"         # e.g. "oil painting" — must be a specific material or process
+
+# ── Layer 1B: Style Basin ─────────────────────────────────────────
+# Primary visual consistency mechanism. Not optional for style-consistent projects.
+style_basin:
+  sref: "painterly, dramatic lighting"                  # URL or MJ style seed integer
+                            # If not yet established: "null: building"
+
+# ── Layer 1C: Character Anchor ────────────────────────────────────
+character_anchor:
+  cref: ""                  # URL, or "null: no character consistency required"

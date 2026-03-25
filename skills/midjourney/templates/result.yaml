@@ -1,0 +1,20 @@
+# Basin Navigation System — Result Record
+# Copy to [project]/prompt-system/results/[result-id].yaml
+# Created when an iteration verdict is "keep".
+# prompt_snapshot and system_lock_snapshot must be copied verbatim from the session file.
+
+result:
+  id: ""                    # unique result ID, e.g. [project-slug]-r01
+  session_id: ""
+  iteration_id: ""          # [session_id]-[nn]
+  output_url: ""
+  quality_score: 0          # 1–5, manual assessment
+  use_case: ""              # what this result is for
+  tags: []
+  promoted_to_library: false
+
+  # Copy verbatim from the iteration entry's prompt block.
+  prompt_snapshot: {}
+
+  # Copy verbatim from the session header's system_lock block.
+  system_lock_snapshot: {}

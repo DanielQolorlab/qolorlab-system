@@ -1,0 +1,31 @@
+# Basin Navigation System — Project Config
+# Copy to [project]/prompt-system/project.yaml and fill in once per project.
+# This file is the stable identity of the project's visual system.
+# Do not change between sessions unless a Layer 0 parameter test is underway.
+
+project:
+  name: ""
+  goal: ""    # one sentence — what visual output does this project produce
+
+# Layer 0 — System Lock
+# Set once. Held constant across all sessions.
+system_lock:
+  model_version: "v6.1"
+  aspect_ratio: ""        # e.g. 16:9 / 1:1 / 2:3 / 3:4
+  stylize: 0              # 0–1000. Must be set intentionally.
+  seed: ""                # integer, or "unlocked" until a composition is found
+
+# Layer 1A — Content Basin
+# Subject and medium jointly define the basin. Must be compatible.
+content_basin:
+  subject_anchor: ""      # e.g. "portrait of a woman"
+  medium_anchor: ""       # e.g. "oil painting" — must be a specific material or process
+
+# Layer 1B — Style Basin
+style_basin:
+  sref: ""                # URL or MJ style seed integer
+                          # If not yet established: "null: building"
+
+# Layer 1C — Character Anchor
+character_anchor:
+  cref: ""                # URL, or "null: no character consistency required"

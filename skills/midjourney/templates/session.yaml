@@ -1,0 +1,23 @@
+# Basin Navigation System — Session File
+# Copy to [project]/prompt-system/sessions/[YYYY-MM-DD]-[nn].yaml
+# Fill in the header, then append iteration entries below it.
+
+session:
+  id: ""          # uuid or short slug — must be unique across the project
+  date: ""        # ISO 8601, e.g. 2026-03-18
+  project: ""
+  goal: ""        # one sentence — what specific visual output is the target of this session
+
+  # Must match project.yaml system_lock, or note intentional overrides.
+  system_lock:
+    model_version: "v6.1"
+    stylize: 0
+    aspect_ratio: ""
+    seed: ""              # integer or "unlocked"
+    sref: ""              # url or "null: building"
+    cref: ""              # url or "null: [reason]"
+
+# ─────────────────────────────────────────
+# Append iteration entries below this line.
+# Copy from templates/iteration.yaml for each generation.
+# ─────────────────────────────────────────

@@ -1,0 +1,25 @@
+# ─────────────────────────────────────────────────────────────────
+# Basin Navigation System — Style Reference Registry
+# ─────────────────────────────────────────────────────────────────
+# Append one entry per new sref added to this project.
+# Update compatible_subjects, incompatible_subjects, and
+# recommended_stylize_range as evidence accumulates across sessions.
+# Reference: skills/midjourney/docs/DATA_SCHEMA.md
+# ─────────────────────────────────────────────────────────────────
+
+srefs: []
+
+# ─────────────────────────────────────────────────────────────────
+# Entry format (copy from skills/midjourney/templates/sref.yaml):
+#
+# - id: ""
+#   url: ""
+#   source: ""
+#   first_used: ""
+#   observed_basin_pull: ""
+#   compatible_subjects: []
+#   incompatible_subjects: []
+#   recommended_stylize_range: ""
+#   sessions: []
+#   notes: ""
+# ─────────────────────────────────────────────────────────────────

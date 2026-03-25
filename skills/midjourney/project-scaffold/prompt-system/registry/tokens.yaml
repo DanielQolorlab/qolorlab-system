@@ -1,0 +1,29 @@
+# ─────────────────────────────────────────────────────────────────
+# Basin Navigation System — Token Registry
+# ─────────────────────────────────────────────────────────────────
+# Append one entry per new token encountered in this project.
+# Update usage_count and outcomes after each session.
+# Do not delete entries. Mark conflicts and failures in notes.
+# Reference: skills/midjourney/docs/DATA_SCHEMA.md
+# ─────────────────────────────────────────────────────────────────
+
+tokens: []
+
+# ─────────────────────────────────────────────────────────────────
+# Entry format (copy from skills/midjourney/templates/token.yaml):
+#
+# - value: ""
+#   dimension: ""
+#   first_used: ""
+#   usage_count: 0
+#   context:
+#     subject_types: []
+#     medium_types: []
+#   sessions: []
+#   outcomes:
+#     keep_count: 0
+#     discard_count: 0
+#     iterate_count: 0
+#   dimension_conflicts: []
+#   notes: ""
+# ─────────────────────────────────────────────────────────────────

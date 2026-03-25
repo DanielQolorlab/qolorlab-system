@@ -1,0 +1,14 @@
+# Basin Navigation System — Style Reference Record
+# Append one block per new sref to [project]/prompt-system/registry/srefs.yaml
+# Update compatible/incompatible subjects and recommended range as evidence accumulates.
+
+- id: ""              # short slug, e.g. "sref-001"
+  url: ""             # URL or MJ style seed integer
+  source: ""          # origin: "MJ explore" / "own generation" / "external reference"
+  first_used: ""      # ISO 8601
+  observed_basin_pull: ""       # description of dominant visual effect this sref imposes
+  compatible_subjects: []       # subject anchors this sref works with
+  incompatible_subjects: []     # subject anchors where this sref causes conflict or noise
+  recommended_stylize_range: "" # e.g. "200–400"
+  sessions: []        # [session_id, ...]
+  notes: ""

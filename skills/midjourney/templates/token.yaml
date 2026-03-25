@@ -1,0 +1,20 @@
+# Basin Navigation System — Token Record
+# Append one block per new token to [project]/prompt-system/registry/tokens.yaml
+# Update counts and outcomes after each session.
+
+- value: ""           # the token string, e.g. "chiaroscuro"
+  dimension: ""       # lighting_quality / colour_palette / era / mood_register /
+                      # lighting_direction / focal_length / composition_type /
+                      # framing / environment / medium
+  first_used: ""      # ISO 8601
+  usage_count: 0
+  context:
+    subject_types: [] # subject anchor categories this token appears with
+    medium_types: []  # medium anchor types this token appears with
+  sessions: []        # [session_id, ...]
+  outcomes:
+    keep_count: 0
+    discard_count: 0
+    iterate_count: 0
+  dimension_conflicts: []   # tokens this one has conflicted with
+  notes: ""
